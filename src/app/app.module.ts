@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { OrganizationChartComponent } from './OrganizationChart/organization-chart/organization-chart.component';
+import { OrgChartModule } from 'angular13-organization-chart';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { OrganizationChartComponent } from './OrganizationChart/organization-cha
     OrganizationChartComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    OrgChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
