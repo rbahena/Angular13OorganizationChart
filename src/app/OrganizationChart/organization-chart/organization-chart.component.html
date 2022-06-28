@@ -2,7 +2,7 @@
 
     <!-- OPTIONAL: zoom button with an ugly png -->
     <button zoom-button class="zoom-button" (click)="exampleChart.toggleZoom()">
-        <img src="assets/images/ironman.png" width="100%" alt="ZoomInOut">
+        <img src="assets/zoom-in-out.png" width="100%" alt="ZoomInOut">
     </button>
 
 </angular-org-chart>
@@ -10,7 +10,7 @@
 <!-- Node Template -->
 <ng-template #nodeTemplate let-node>
     <div class="chart-node">
-        <img [src]="node?.image" width="100px" height="100px">
+        <img [src]="node?.image"  width="10%">
         <div class="name">{{node?.name}}</div>
         <div class="description">{{node?.description}} </div>
         <!-- An ugly button to fold/unfold -->
