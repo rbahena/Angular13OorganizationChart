@@ -10,7 +10,7 @@
 <!-- Node Template -->
 <ng-template #nodeTemplate let-node>
     <div class="chart-node">
-        <img [src]="node?.image">
+        <img [src]="node?.image" width="100px" height="100px">
         <div class="name">{{node?.name}}</div>
         <div class="description">{{node?.description}} </div>
         <!-- An ugly button to fold/unfold -->
